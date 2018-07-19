@@ -1,0 +1,33 @@
+/******[BACKGROUND]******/
+.background_image
+{
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0px;
+}
+#guy
+{
+  right: 0%;
+}
+
+/******[REGISTRATION FORM]******/
+#registration_information
+{
+  position: relative;
+  margin-top: 5%;
+  left: 35%;
+  width: 30%;
+  height: 70%;
+}
+.input_section
+{
+  position: relative;
+  padding: .5%;
+  width: 100%;
+}
+.user_input
+{
+  position: relative;
+  width: 100%;
+}
