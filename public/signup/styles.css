@@ -1,0 +1,68 @@
+body
+{
+  overflow: hidden;
+}
+/******[BACKGROUND]******/
+.head
+{
+  position: relative;
+  text-align: center;
+  top: 25px;
+  font-family: 'Diplomata SC';
+  font-size: 50px;
+  color: blue;
+  text-decoration-color: blue;
+  z-index: 1000;
+}
+.background_image
+{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+#guy
+{
+  right: 0%;
+}
+
+/******[REGISTRATION FORM]******/
+#registration_information
+{
+  background: rgb(102, 153, 255, 0.65);
+  position: relative;
+  margin-top: 5%;
+  left: 35%;
+  width: 30%;
+}
+.input_section
+{
+  position: relative;
+  padding: 10px;
+  width: 100%;
+}
+.user_input
+{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.title
+{
+  margin: 0px;
+  padding: 0px;
+}
+.button
+{
+  text-align: center;
+  position: relative;
+  left: 40%;
+  background-color: pink;
+  color: yellow;
+  border-width: 0px;
+  margin: 20px;
+  width: auto;
+}

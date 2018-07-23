@@ -6,13 +6,20 @@ function activate_modal()
 
 window.onload = function()
 {
-  VC.CreateVidyoConnector
-  ({
-    viewId: "video",
-    viewStyle: "VIDYO_CONNECTORVIEWSTYLE_Default",
-    remoteParticipants: 2,
-    logFileFilter: "warning info@VidyoClient info@VidyoConnector",
-    logFileName: "",
-    userData: ""
-  });
+  // Initialize Firebase
+  var config = {
+      apiKey: "AIzaSyDxsoafASxDoKRtR3VuMA-7YlpGZ2MIAG8",
+      authDomain: "secretly-loving.firebaseapp.com",
+      databaseURL: "https://secretly-loving.firebaseio.com",
+      projectId: "secretly-loving",
+      storageBucket: "secretly-loving.appspot.com",
+      messagingSenderId: "242196239817"
+  };
+  firebase.initializeApp(config);
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  var storage = firebase.storage();
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  var storage = firebase.storage();
+  // Create a storage reference from our storage service
+  var storageRef = storage.ref();
 }
