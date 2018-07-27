@@ -16,10 +16,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts.js"></script>
   </head>
-
   <body>
     <div id="graphics">
-      <h1 id="title" class="head"><strong>SIGNUP</strong></h1>
+      <h1 id="title" class="head"><strong>SIGN-UP</strong></h1>
       <img id="background" src="images\Romanticbackground2.jpg" class="background_image">
     </div>
     <form id="registration_information" class="registration_information">
@@ -33,7 +32,7 @@
       </div>
       <div id="username" class="username input_section">
         <p id="username_title" class="title">Username: </p>
-        <input id="username_input" class="user_input" name="username"></input>
+        <input id="username_input" class="user_input" name="username" onkeyup="user_exists()"></input>
       </div>
       <div id="password" class="input_section">
         <p id="password_title" class="title">Password:</p>
@@ -53,5 +52,13 @@
       </div>
       <button id="submit" class="button submit" name="submit_button" type="submit" >Submit</button>
     </form>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
   </body>
 </html>

@@ -58,11 +58,18 @@ body
 .button
 {
   text-align: center;
-  position: relative;
-  left: 40%;
+  position: absolute;
   background-color: #822032;
   color: white;
   border-width: 0px;
   margin: 20px;
   width: auto;
+}
+#signup
+{
+  left: 0px;
+}
+#login
+{
+  right: 0px;
 }

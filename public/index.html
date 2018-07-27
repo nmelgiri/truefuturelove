@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="chatApp">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-    <script src="app.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+<html lang="en">
+  <head>
+    <title>Secretly Loving</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body ng-controller="ChatController">
-    <br>
-    <div class="container">
-        <div class="panel panel-primary">
-            <div class="panel-heading">Web Based Firebase Chat Application</div>
-            <div class="panel-body">
-                <p ng-repeat="m in messages">{{m.message}} - {{m.date | date:'medium'}}</p>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Message here..." ng-model="messageText">
-                </div>
-                <button type="submit" class="btn btn-default" ng-click="send()">Send</button>
-            </div>
-        </div>
+    <link href='https://fonts.googleapis.com/css?family=Diplomata SC' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="animate.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div id="graphics">
+      <h1 id="title" class="head"><strong>OPTION</strong></h1>
+      <img id="background" src="images\Romanticbackground2.jpg" class="background_image">
     </div>
-
-</body>
+    <div id="registration_information" class="registration_information">
+      <a href="signup\index.html">
+        <button id="signup" class="button">SIGNUP</button>
+      </a>
+      <a href="login\index.html">
+        <button id="login" class="button">LOGIN</button>
+      </a>
+    </form>
+  </body>
 </html>
