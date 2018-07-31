@@ -17,48 +17,63 @@
     <script src="scripts.js"></script>
   </head>
   <body>
-    <div id="graphics">
-      <h1 id="title" class="head"><strong>SIGN-UP</strong></h1>
-      <img id="background" src="images\Romanticbackground2.jpg" class="background_image">
+    <div id="basic_info">
+      <div id="graphics">
+        <h1 id="title" class="head"><strong>SIGN-UP</strong></h1>
+        <img id="background" src="images\Romanticbackground2.jpg" class="background_image">
+      </div>
+      <form id="registration_information" class="registration_information">
+        <div id="first_name" class="first_name input_section">
+          <p id="first_name_title" class="title">First Name:</p>
+          <input id="first_name_input" class="user_input" name="first_name"></input>
+        </div>
+        <div id="last_name" class="last_name input_section">
+          <p id="last_name_title" class="title">Last name:</p>
+          <input id="last_name_input" class="user_input" name="last_name"></input>
+        </div>
+        <div id="username" class="username input_section">
+          <p id="username_title" class="title">Username: </p>
+          <input id="username_input" class="user_input" name="username" onkeyup="user_exists()"></input>
+        </div>
+        <div id="password" class="input_section">
+          <p id="password_title" class="title">Password:</p>
+          <input id="password_input" class="user_input" name="password" type="password"></input>
+        </div>
+        <div id="confirm_password" class="input_section">
+          <p id="confirm_password_title" class="title">Confirm password:</p>
+          <input id="confirm_password_input" class="user_input" name="confirm_password" type="password"></input>
+        </div>
+        <div id="fake_password" class="input_section">
+          <p id="fake_password_title" class="title">Fake password:</p>
+          <input id="fake_password_input" class="user_input" name="fake_password" type="password"></input>
+        </div>
+        <div id="fake_password_confirm" class="input_section">
+          <p id="fake_password_title_confirm" class="title">Confirm fake password:</p>
+          <input id="fake_password_input_confirm" class="user_input" name="fake_password_confirm" type="password"></input>
+        </div>
+        <div id="decoy_website" class="input_section">
+          <p id="decoy_website_title" class="title">What is your decoy website?:</p>
+          <input id="decoy_website_input" class="user_input" name="decoy_website"></input>
+        </div>
+        <button id="submit" class="button submit" name="submit_button" type="submit" >Submit</button>
+      </form>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
     </div>
-    <form id="registration_information" class="registration_information">
-      <div id="first_name" class="first_name input_section">
-        <p id="first_name_title" class="title">First Name:</p>
-        <input id="first_name_input" class="user_input" name="first_name"></input>
-      </div>
-      <div id="last_name" class="last_name input_section">
-        <p id="last_name_title" class="title">Last name:</p>
-        <input id="last_name_input" class="user_input" name="last_name"></input>
-      </div>
-      <div id="username" class="username input_section">
-        <p id="username_title" class="title">Username: </p>
-        <input id="username_input" class="user_input" name="username" onkeyup="user_exists()"></input>
-      </div>
-      <div id="password" class="input_section">
-        <p id="password_title" class="title">Password:</p>
-        <input id="password_input" class=" user_input" name="password" type="password"></input>
-      </div>
-      <div id="confirm_password" class="input_section">
-        <p id="confirm_password_title" class="title">Confirm password:</p>
-        <input id="confirm_password_input" class=" user_input" name="confirm_password" type="password"></input>
-      </div>
-      <div id="fake_password" class="input_section">
-        <p id="fake_password_title" class="title">Fake password:</p>
-        <input id="fake_password_input" class=" user_input" name="fake_password" type="password"></input>
-      </div>
-      <div id="fake_password_confirm" class="input_section">
-        <p id="fake_password_title_confirm" class="title">Confirm fake password:</p>
-        <input id="fake_password_input_confirm" class=" user_input" name="fake_password_confirm" type="password"></input>
-      </div>
-      <button id="submit" class="button submit" name="submit_button" type="submit" >Submit</button>
-    </form>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
+    <div id="get_chatroom">
+      <p>
+        <span> Your code is: </span>
+        <span id="my_code"></span>
+      </p>
+      <span> Enter another code here: </span>
+      <input id="another_code"></input>
+      <button id="enter">Search</button>
     </div>
   </body>
 </html>

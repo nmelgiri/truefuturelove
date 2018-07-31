@@ -27,11 +27,22 @@ window.onload = function()
       {
         //normal password
         console.log("normal password");
+        window.location.replace("../main_interface/index.html"+"#"+childSnapshot.key);
       }
       else if (password_check(username, childSnapshot) === 2)
       {
         // fake_password
         console.log("fake password");
+        var this_username = 0;
+        username = document.getElementById("username_input").value;
+        users.once('value').then(function(snapshot)
+        {
+          var temp;
+          snapshot.forEach(function(childSnapshot)
+          {
+            console.log(childSnapshot.child("primary chatroom").val());
+          });
+        });
       }
       else if (password_check(username, childSnapshot) === 0)
       {
